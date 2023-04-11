@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Is It Kyle Foley's Birthday?</title>
+</head>
+<body>
+    <p id="message"></p>
+    <script>
+        const today = new Date();
+        const month = today.getMonth();
+        const day = today.getDate();
+        const birthday = document.getElementById("message");
+        if (month == 3 && day == 11) {
+            birthday.innerHTML = "YES!";
+              birthday.style.color = "white";
+            document.body.style.backgroundColor = "red";
+            document.body.style.backgroundImage = "url('./balloons.png')";
+        } else {
+            birthday.innerHTML = "No.";
+        }
+    </script>
+</body>
+
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    p {
+        font-size: 200px;
+    }
+</html>
+
